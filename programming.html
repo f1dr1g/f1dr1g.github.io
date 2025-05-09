@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Раздел об программировании в IT Knowledge Base: языки программирования, фреймворки, библиотеки и лучшие практики разработки.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Программирование - IT Knowledge Base</title>
+    <link rel="icon" href="favicon.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(101715028, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/101715028" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    <div class="page">
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__title"><a href="index.html">IT Knowledge Base</a></h1>
+                <div class="header__actions">
+                    <a href="index.html" class="button button--secondary">
+                        <i class="fas fa-home"></i> Главная
+                    </a>
+                    <button class="button button--random" id="randomArticleBtn">
+                        <i class="fas fa-random"></i> Случайная статья
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main main--category">
+            <section class="category-header">
+                <div class="category-header__icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h2 class="category-header__title">Программирование</h2>
+                <p class="category-header__description">
+                    Языки программирования, фреймворки, библиотеки и лучшие практики разработки.
+                </p>
+            </section>
+
+            <section class="articles">
+                <div class="articles__list" id="articlesList">
+                    <!-- Articles will be inserted here by JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <p class="footer__text">© 2023 IT Knowledge Base</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initCategoryPage('programming');
+        });
+    </script>
+</body>
+</html>
